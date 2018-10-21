@@ -11,7 +11,7 @@ const PostsController = {
     return router;
   },
   index(req, res) {
-    models.Posts.findAll()
+    models.Posts.findAll({order: [ ['createdAt', 'DESC']]})
       .then((posts) => {
         res.render('posts', { posts });
       });

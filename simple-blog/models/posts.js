@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   Posts.associate = (models) => {
-    // associations can be defined here
+    // associations can be defined here 
   }
 
   return Posts;
